@@ -1,0 +1,7 @@
+Android client for the popular Twitter frontend, Nitter.
+
+Thanks to Android WebView, you can have a completely separate app for Nitter and isolate your cookies and history from your main browser app, which is a privacy bonus.
+
+If you didn't know already, Nitter is a free, open-source frontend for Twitter maintained by Zedeus on GitHub.
+
+Full details can be found in the projects' README.md file on GitLab.
