@@ -10,7 +10,7 @@ To do this, find [this file](/app/src/main/java/com/plexer0/nitter/MainActivity.
 ```wv1.loadUrl("https://nitter.instance.url");```
 
 ## JavaScript
-For the sake on convenience, JavaScript is enabled by defaut so you can run hls video content out of the box.
+For the sake of convenience, JavaScript is enabled by defaut so you can run hls video content out of the box.
 If you wish to disable JavaScript completely, find [this file](/app/src/main/java/com/plexer0/nitter/MainActivity.java) and edit the following line: <br>
 ```wv1.getSettings().setJavaScriptEnabled(true/false);```
 
