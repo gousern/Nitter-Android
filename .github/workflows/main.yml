@@ -1,0 +1,18 @@
+name: Close All Pull Requests
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: crondaemon/close-pr@v1
+      with:
+        # Optional. Post a issue comment just before closing a pull request.
+        comment: "Hey there and thank you for your contribution! This is a **read-only mirror** and contributions have to be made on GitLab. Sorry about that!"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
