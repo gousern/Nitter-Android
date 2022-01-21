@@ -1,5 +1,5 @@
 # How to Contribute
-First of all, thanks you wanting to help out! Here are some of the main things you can help with:
+First of all, thank you wanting to help out! Here are some of the main things you can help with:
 
 ## Code Inspection
 At the time of writing, I'm not super experienced with app development on Android, so I followed a tutorial to guide me along the process of making this app, while making some changes along the way. In that case, some of the resources used then might be outdated now, or there might be a better method than that tutorial showed that I might not have thought of. Any sort of code touch-ups would be greatly appreciated.
