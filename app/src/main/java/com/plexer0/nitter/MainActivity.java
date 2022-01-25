@@ -19,10 +19,10 @@ public class MainActivity extends Activity {
         wv1 = (WebView) findViewById(R.id.webView);
         wv1.setWebViewClient(new MyBrowser());
         wv1.getSettings().setLoadsImagesAutomatically(true);
-        wv1.getSettings().setJavaScriptEnabled(true);
+        wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv1.canGoBack();
-        wv1.loadUrl("https://nitter.net");
+        wv1.loadUrl("https://nitter.net"); // <== Set Nitter instance here.
 
     }
 
