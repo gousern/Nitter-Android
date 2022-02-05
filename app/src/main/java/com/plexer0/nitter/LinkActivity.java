@@ -22,8 +22,24 @@ public class LinkActivity extends Activity {
         wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv1.canGoBack();
-        wv1.loadUrl(String.valueOf(getIntent().getData())); // Leave as is to fetch URL intent.
+        if (savedInstanceState == null)
+        {
+            wv1.loadUrl(String.valueOf(getIntent().getData())); // Leave as is to fetch URL intent.
+        }
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState )
+    {
+        super.onSaveInstanceState(outState);
+        wv1.saveState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+        wv1.restoreState(savedInstanceState);
     }
 
     @Override

@@ -22,8 +22,24 @@ public class MainActivity extends Activity {
         wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv1.canGoBack();
-        wv1.loadUrl("https://nitter.net"); // <== Set Nitter instance here.
+        if (savedInstanceState == null)
+        {
+            wv1.loadUrl("https://nitter.net"); // <== Set Nitter instance here.
+        }
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState )
+    {
+        super.onSaveInstanceState(outState);
+        wv1.saveState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+        wv1.restoreState(savedInstanceState);
     }
 
     @Override
