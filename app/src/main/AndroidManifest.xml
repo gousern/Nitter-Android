@@ -33,6 +33,10 @@
                 <data android:scheme="https" />
 
                 <data android:host="nitter.net" />
+		<data android:host="nitter.kavin.rocks" />
+		<data android:host="nitter.sethforprivacy.com" />
+		<data android:host="nitter.datatunnel.xyz" />
+		<data android:host="nitter.actionsack.com" />
             </intent-filter>
         </activity>
     </application>
