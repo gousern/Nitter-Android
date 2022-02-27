@@ -10,6 +10,7 @@ import android.webkit.WebViewClient;
 
 public class LinkActivity extends Activity {
 
+    // Initialise WebView
     private WebView wv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class LinkActivity extends Activity {
         }
     }
 
+    // Prevent WebView from being destroyed when the device orientation changes
     @Override
     protected void onSaveInstanceState(Bundle outState )
     {
@@ -42,6 +44,7 @@ public class LinkActivity extends Activity {
         wv1.restoreState(savedInstanceState);
     }
 
+    // Go backwards in WebView rather than exiting the app
     @Override
     public void onBackPressed() {
         if(wv1!= null && wv1.canGoBack())

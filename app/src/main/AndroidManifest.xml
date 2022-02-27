@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.plexer0.nitter">
 
+    <!--Internet permission is required to connect to Nitter-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -20,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LinkActivity"
             android:exported="true">
@@ -32,11 +32,12 @@
                 <data android:scheme="http" />
                 <data android:scheme="https" />
 
+                <!--Nitter instances that will launch in the app-->                
                 <data android:host="nitter.net" />
-		<data android:host="nitter.kavin.rocks" />
-		<data android:host="nitter.sethforprivacy.com" />
-		<data android:host="nitter.datatunnel.xyz" />
-		<data android:host="nitter.actionsack.com" />
+		        <data android:host="nitter.kavin.rocks" />
+		        <data android:host="nitter.sethforprivacy.com" />
+		        <data android:host="nitter.datatunnel.xyz" />
+		        <data android:host="nitter.actionsack.com" />
             </intent-filter>
         </activity>
     </application>
