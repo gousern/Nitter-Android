@@ -38,6 +38,9 @@
 		        <data android:host="nitter.sethforprivacy.com" />
 		        <data android:host="nitter.datatunnel.xyz" />
 		        <data android:host="nitter.actionsack.com" />
+
+		<!--Twitter URLs that will open and redirect to Nitter-->
+                <data android:host="twitter.com" />
             </intent-filter>
         </activity>
     </application>

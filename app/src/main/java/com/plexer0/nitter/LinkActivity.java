@@ -18,7 +18,24 @@ public class LinkActivity extends Activity {
         setContentView(R.layout.activity_link);
 
         wv1 = (WebView) findViewById(R.id.webView);
-        wv1.setWebViewClient(new MyBrowser());
+        wv1.setWebViewClient(new MyBrowser()
+        {
+            // Rewrite standard Twitter URLs to Nitter
+            @Override
+            public void onLoadResource(WebView view, String url) {
+                super.onLoadResource(view, url);
+            }
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                int len = url.length();
+                if(url.contains("mobile.twitter.com"))
+                {
+                    url = url.replace("mobile.twitter.com", "nitter.net");
+                }
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+        });
+
         wv1.getSettings().setLoadsImagesAutomatically(true);
         wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
