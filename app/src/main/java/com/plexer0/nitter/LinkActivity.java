@@ -31,7 +31,9 @@ public class LinkActivity extends Activity {
                 if(url.contains("mobile.twitter.com"))
                 {
                     url = url.replace("mobile.twitter.com", "nitter.net");
+                    // Toast.makeText(LinkActivity.this, "URL changed: "+url, Toast.LENGTH_LONG).show(); (Used for debugging)
                 }
+                // Toast.makeText(LinkActivity.this, "URL static: "+url, Toast.LENGTH_LONG).show(); (Used for debugging)
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
