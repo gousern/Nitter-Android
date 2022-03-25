@@ -34,10 +34,10 @@
 
                 <!--Nitter instances that will launch in the app-->                
                 <data android:host="nitter.net" />
-		        <data android:host="nitter.kavin.rocks" />
-		        <data android:host="nitter.sethforprivacy.com" />
-		        <data android:host="nitter.datatunnel.xyz" />
-		        <data android:host="nitter.actionsack.com" />
+		<data android:host="nitter.kavin.rocks" />
+		<data android:host="nitter.sethforprivacy.com" />
+		<data android:host="nitter.datatunnel.xyz" />
+		<data android:host="nitter.actionsack.com" />
 
 		<!--Twitter URLs that will open and redirect to Nitter-->
                 <data android:host="twitter.com" />
