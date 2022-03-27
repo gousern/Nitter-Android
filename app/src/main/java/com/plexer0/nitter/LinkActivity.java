@@ -41,7 +41,7 @@ public class LinkActivity extends Activity {
         wv1.getSettings().setLoadsImagesAutomatically(true);
         wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        wv1.canGoBack();
+        wv1.setBackgroundColor(Color.DKGRAY);
         if (savedInstanceState == null)
         {
             wv1.loadUrl(String.valueOf(getIntent().getData())); // Leave as is to fetch URL intent.
