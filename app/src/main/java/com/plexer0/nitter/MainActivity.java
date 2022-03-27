@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
         wv1.getSettings().setLoadsImagesAutomatically(true);
         wv1.getSettings().setJavaScriptEnabled(true); // <== Set JavaScript setting here.
         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        wv1.setBackgroundColor(Color.DKGRAY);
+        wv1.setBackgroundColor(Color.DKGREY);
         if (savedInstanceState == null)
         {
             wv1.loadUrl("https://nitter.net"); // <== Set Nitter instance here.
