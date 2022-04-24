@@ -1,0 +1,5 @@
+What's new and improved:
+
+* Refactored and removed unnecessary code.
+* Nitter links from external applications will now open in the app. (Other instances will be added in a later release)
+* Fixed WebView activity being destroyed when the device changes orientation.

@@ -1,0 +1,4 @@
+What's new and improved:
+
+* Added support for multiple Nitter instances when handling links. (Check the AndroidManifest.xml file for the exact instances)
+* Twitter.com links will now launch in the app and be redirected to Nitter.

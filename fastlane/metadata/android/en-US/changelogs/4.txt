@@ -1,0 +1,3 @@
+What's new and improved:
+
+* [NEW] Dimmed background on startup to prevent eye strain in low-light environments.
