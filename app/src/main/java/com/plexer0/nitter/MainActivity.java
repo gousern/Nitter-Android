@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         wv1.setBackgroundColor(0xF4444444);
         if (savedInstanceState == null)
         {
-            wv1.loadUrl("https://nitter.net"); // <== Set Nitter instance here.
+            wv1.loadUrl("https://nitter.nl"); // <== Set Nitter instance here.
         }
     }
 
